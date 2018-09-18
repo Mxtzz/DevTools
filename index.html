@@ -6,15 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>DevTools</title>
     <script src="./index.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="main">
         <div class="transColor">
-            <input type="text" name="" id="" class="colorDec">
-            <input type="button" value="Translate" class="transToHex">
-            <br />
-            <input type="text" name="" id="" class="colorHex">
-            <input type="button" value="Translate" class="transToDec">
+            <div class="transColorDec">
+                <div class="transColorDecInput">
+                    <p>RGB (</p>
+                    <input type="text" value="" name="" id="colorDecA" class="colorDecA" autofocus>
+                    <p>,</p>
+                    <input type="text" value="" name="" id="colorDecB" class="colorDecB">
+                    <p>,</p>
+                    <input type="text" value="" name="" id="colorDecC" class="colorDecC">
+                    <p>)</p>
+                </div>
+                <button onclick="transToDecBtn()">Translate</button>
+                <div class="theHex">
+                    <span>#</span>
+                    <p id="theHex"></p>
+                </div>
+                
+
+            </div>
+            
+            <div class="transColorHex">
+                <div class="transColorHexInput">
+                    <p>HexColor </p>
+                    <input type="text" name="" id="" class="colorHex">
+                </div>
+                <input type="button" value="Translate" class="transToDec">
+                
+                <div class="theDec">
+                    <span>(</span>
+                    <p class="theDecA"></p>
+                    <span>,</span>
+                    <p class="theDecB"></p>
+                    <span>,</span>
+                    <p class="theDecC"></p>
+                    <span>)</span>
+                </div>
+            </div>
+                    
         </div>
     </div>
 </body>

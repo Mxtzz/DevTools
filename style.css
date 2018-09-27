@@ -8,34 +8,84 @@ body{
     background: #ffeecc;
 }
 
+input[type="text"]{
+    outline: none;
+    background: rgba(0,0,0,0);
+    border: none;
+    border-bottom: #ccc solid 1px;
+    font-size: 16px;
+    text-align: center;
+}
+
+input[type="button"]{
+    background: tomato;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 10px 0 ;
+    margin: 0 20px 0 20px;
+}
+
 .transColor{
     margin-top: 18px;
+    border: #ccc solid 1px;
+    padding: 20px;
+    max-width: 750px;
 }
 
 .transColorDec{
-    
+    display: flex;
 }
 .transColorDecInput{
     display: flex;
+    flex: 1;
+    min-width: 190px;
 }
 .transColorDecInput p{
     padding: 0 5px 0 5px;
+    line-height: 38px;
 }
 .transColorDecInput input{
-    width: 26px;
+    width: 30px;
+}
+.transColorDec input[type="button"]{
+    flex: 1;
+    max-width: 160px;
+}
+.theHex{
+    flex: 1;
 }
 .theHex p{
     display: inline;
+    line-height: 38px;
+    font-weight: bold;
 }
 
 .transColorHex{
     padding-top: 18px;
+    display: flex;
+}
+.transColorHex input[type="button"]{
+    flex: 1;
+    max-width: 160px;
 }
 
 .transColorHexInput{
-    display: flex;
+    flex: 1;
 }
-
+.transColorHexInput p{
+    display: inline-block;
+}
+.transColorHexInput input{
+    text-align: left;
+    line-height: 38px;
+    border-bottom: #ccc solid 1px;
+    
+}
 .theDec{
     display: flex;
+    font-weight: bold;
+    line-height: 38px;
+    flex: 1;
 }

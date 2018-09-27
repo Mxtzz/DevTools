@@ -21,10 +21,10 @@
                     <input type="text" value="" name="" id="colorDecC" class="colorDecC">
                     <p>)</p>
                 </div>
-                <button onclick="transToDecBtn()">Translate</button>
+                <input type="button" value="Translate"  onclick="transToDecBtn()" >
+
                 <div class="theHex">
-                    <span>#</span>
-                    <p id="theHex"></p>
+                    <p id="theHex">#000000</p>
                 </div>
                 
 
@@ -32,18 +32,18 @@
             
             <div class="transColorHex">
                 <div class="transColorHexInput">
-                    <p>HexColor </p>
-                    <input type="text" name="" id="" class="colorHex">
+                    <p># </p>
+                    <input type="text" name="" id="colorHex" class="colorHex">
                 </div>
-                <input type="button" value="Translate" class="transToDec">
+                <input type="button" value="Translate"  onclick="transToHexBtn()" class="transToDec">
                 
                 <div class="theDec">
-                    <span>(</span>
-                    <p class="theDecA"></p>
+                    <span>rgb(</span>
+                    <p id="theDecA">000</p>
                     <span>,</span>
-                    <p class="theDecB"></p>
+                    <p id="theDecB">000</p>
                     <span>,</span>
-                    <p class="theDecC"></p>
+                    <p id="theDecC">000</p>
                     <span>)</span>
                 </div>
             </div>

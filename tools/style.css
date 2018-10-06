@@ -5,7 +5,11 @@
 body{
     margin: 0 auto;
     width: 90%;
-    background: #ffeecc;
+    background: #eee;
+}
+
+.main{
+    flex-direction: column;
 }
 
 input[type="text"]{
@@ -25,13 +29,6 @@ input[type="button"]{
     outline: none;
     padding: 10px 0 ;
     margin: 0 20px 0 20px;
-}
-
-.transColor{
-    margin-top: 18px;
-    border: #ccc solid 1px;
-    padding: 20px;
-    max-width: 750px;
 }
 
 .transColorDec{
@@ -88,4 +85,15 @@ input[type="button"]{
     font-weight: bold;
     line-height: 38px;
     flex: 1;
+}
+
+.tools{
+    flex: 1;
+    border: 1px solid tomato;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 20px 8px;
+    background: #FFEECC;
+    box-shadow: 0px 0px 36px #999;
+
 }
